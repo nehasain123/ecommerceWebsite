@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
-
 import Header from './components/Header/Header';
-import HeaderBanner from './components/Header/HeaderBanner/HeaderBanner';
-
+import Banner from '../src/components/Banner/Banner';
 import FeaturesList from './components/FeaturesList/FeaturesList';
 import ProductList from './components/ProductCard/ProductList';
 import CartBanner from './components/CartBanner/CartBanner';
@@ -15,14 +12,13 @@ import ShopBanner from './components/ShopBanner/ShopBanner';
 import LatestNews from './components/LatestNews/LatestNews';
 import Carousel from './components/Carousel/Carousel';
 import Footer from './components/Footer/Footer';
-import Cart from './components/ProductCard/Cart/Cart';
-import CheckOut from "./components/ProductCard/CheckOut/CheckOut";
+import Cart from './components/Cart/Cart';
 import About from "./pages/About/About";
 import News from "./pages/News/News";
-// import NotFoundPage from './components/NotFound/NotFoundPage';
-
+import CheckOut from "../src/components/CheckOut/CheckOut";
 import './App.css';
 import NotFoundPage from './components/NotFound/NotFoundPage';
+
 
 function App() {
   return (
@@ -32,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <HeaderBanner />
+              <Banner />
               <FeaturesList />
               <ProductList />
               <CartBanner />

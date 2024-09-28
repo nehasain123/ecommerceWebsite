@@ -1,12 +1,12 @@
 import React from 'react';
 import './Cart.css';
-import productImg1 from './products/product-img-1.jpg';
-import productImg2 from './products/product-img-2.jpg';
-import productImg3 from './products/product-img-3.jpg';
-import Carousel from '../../Carousel/Carousel';
-import Breadcrumb from '../../Breadcrumb/Breadcrumb';
+import productImg1 from './images/product-img-1.jpg';
+import productImg2 from './images/product-img-2.jpg';
+import productImg3 from './images/product-img-3.jpg';
+import Carousel from '../Carousel/Carousel';
+import Breadcrumb from '../Breadcrumb/Breadcrumb';
+import Button from '../Button/Button';
 
- 
 
 const Cart = () => {
     // Static cart data
@@ -16,14 +16,14 @@ const Cart = () => {
         { id: 3, name: 'Lemon', price: 35, quantity: 0, image: productImg3 },
     ];
 
-   
+
     const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-    const shipping = subtotal > 200 ? 0 : 45;  
+    const shipping = subtotal > 200 ? 0 : 45;
     const total = subtotal + shipping;
 
     return (
         <>
-            <Breadcrumb heading="Fresh and Organic" title="Cart"/>
+            <Breadcrumb heading="Fresh and Organic" title="Cart" />
             <div className="cart-container my-5 justify-content-center">
                 <div className="table-wrapper">
                     <table className="product-table">
@@ -75,10 +75,9 @@ const Cart = () => {
                             <span>${total}</span>
                         </div>
                     </div>
-
                     <div className="Add-Cart-btn">
-                        <a href="#" className="btn btn-warning"> Update Cart</a>
-                        <a href="CheckOut" className="btn btn-warning ms-3"> Check Out </a>
+                        <Button textKey="updatecart" type="link" link="#" className="btn-warning me-4" />
+                        <Button textKey="checkout" type="link" link="/CheckOut" className="btn-warning" />
                     </div>
 
                     <div className="coupon-container mt-4">
@@ -86,7 +85,8 @@ const Cart = () => {
                         <input type="text" placeholder="Coupon" className="coupon-input" />
                     </div>
                     <div className="Add-Cart-btn">
-                        <a href="#" className="btn btn-warning"> APPLY</a>
+
+                        <Button textKey="apply" type="link" link="#" className="btn-warning" />
                     </div>
                 </div>
             </div>
@@ -95,4 +95,4 @@ const Cart = () => {
     );
 };
 
-  export default Cart;
+export default Cart;

@@ -2,13 +2,17 @@ import React from 'react';
 import './Button.css';
 
 const buttonTexts = {
-  addToCart: "shop now",
+  addToCart: "Add to Cart",
   MoreNews: "More News",
   checkout: "Checkout",
   ShopNow :"Shop Now",
   fruitCollection: "Fruit Collection",  
   contactUs: "Contact Us",  
-  BackHome: "Back to Home",           
+  BackHome: "Back to Home",  
+  updatecart: "Update Cart",  
+  checkout: "Checkout",  
+  apply : "Apply",
+  PlaceOrder: "Place Order",           
 };
 
 const Button = ({ textKey, type, link, icon, className, onClick }) => {

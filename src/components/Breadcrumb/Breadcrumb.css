@@ -28,16 +28,19 @@
 
   .breadcrumb-text {
       position: relative;
+      top: 27px;
       z-index: 2;
   }
   .breadcrumb-text p {
-      margin: 0;
-      font-size: 16px;
-      color: #6c757d;
+    color: #F28123;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 14px;
   }
   .breadcrumb-text h1 {
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 700;
     color: #fff;
     margin: 0;
     margin-top: 20px

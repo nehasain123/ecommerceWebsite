@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import "../../assets/responsive.css"
 import weblogo from "./images/logo.png";
+ 
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <>
+ 
       <header className={`navbar ${scrolling ? 'scrolled' : ''}`}>
         <div className='container d-flex justify-content-start align-items-center main-header'>
           <div className="logo">
