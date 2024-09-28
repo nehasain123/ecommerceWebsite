@@ -39,7 +39,7 @@
 // const News = () => {
 //   return (
 //   <>
-    
+
 //     <Breadcrumb heading="Organic Information" title="News Article"/>
 //     <div className="news-container">
 //       <h2>Latest News</h2>
@@ -62,15 +62,15 @@
 
 
 
- 
+
 import React from 'react';
-import './News.css';  
+import './News.css';
 import newsimge1 from "./News/news-bg-1.jpg";
 import newsimge2 from "./News/news-bg-2.jpg";
 import newsimge3 from "./News/news-bg-3.jpg";
- import Button from '../../components/Button/Button';
- import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
- 
+import Button from '../../components/Button/Button';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
+
 const NewsCard = ({ image, title, author, date, text }) => {
   return (
     <div className="card">
@@ -88,7 +88,7 @@ const NewsCard = ({ image, title, author, date, text }) => {
   );
 };
 
- 
+
 const News = () => {
   const newsItems = [
     {
@@ -137,31 +137,31 @@ const News = () => {
   ];
 
   return (
-  <>
-  
-  <Breadcrumb heading=" Organic Information" title="News Article" />
-    <div className="container mb-5  ">
-       
+    <>
 
-      <div className="row d-flex justify-content-center images-main-section   ">
-        {newsItems.map((item, index) => (
-          <div className="col-md-4 pb-5" key={index}>
-            <NewsCard 
-              image={item.image}
-              title={item.title}
-              author={item.author}
-              date={item.date}
-              text={item.text}
-            />
-          </div>
-        ))}
-      </div>
+      <Breadcrumb heading=" Organic Information" title="News Article" />
+      <div className="container mb-5  ">
 
-      <div className="Add-Cart-btn text-center mt-5">
-          <Button textKey="MoreNews" type="link" link="/cart"   className="btn-warning" />
+
+        <div className="row d-flex justify-content-center images-main-section   ">
+          {newsItems.map((item, index) => (
+            <div className="col-md-4 pb-5" key={index}>
+              <NewsCard
+                image={item.image}
+                title={item.title}
+                author={item.author}
+                date={item.date}
+                text={item.text}
+              />
+            </div>
+          ))}
         </div>
-    </div>
-  </>
+
+        <div className="Add-Cart-btn text-center mt-5">
+          <Button textKey="MoreNews" type="link" link="/cart" className="btn-warning" />
+        </div>
+      </div>
+    </>
   );
 };
 
