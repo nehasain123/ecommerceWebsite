@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* InfoBar.css */
+
+.info-bar .info-item {
+    display: flex;
+ 
+    align-items: center;
+  }
+  
+  .info-bar .info-item .icon {
+    color: #f77d0e;
+    margin-right: 12px;
+    border: 2px dotted #f77d0e;
+    padding: 15px 14px 12px 15px;
+    border-radius: 48px;
+}
+  
+  
+  .info-bar h5 {
+    font-weight: bold;
+  }
+  
+  .info-bar p {
+    margin: 0;
+    color: #666;
+  }
+  

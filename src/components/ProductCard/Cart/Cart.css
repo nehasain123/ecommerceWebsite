@@ -1,0 +1,118 @@
+ General styling
+body {
+  font-family: Arial, sans-serif;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+ 
+
+.product-table {
+  width: 760px;
+ 
+  border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+  border: 1px solid #f6f0f0;  
+  padding: 15px;
+  text-align: center;
+ font-weight: 500;
+}
+ .data-row{
+  width: 201.53px !important;
+  height: 91px !important;
+ }
+
+.product-image {
+  width: 80px;
+  height: 80px;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.summary-section {
+  width: 380px;
+  height: 183.25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-summary {
+  border: 1px solid #f6f1f1;
+  
+  background-color: #f9f9f9;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.update-button, .checkout-button {
+  background-color: orange;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.update-button:hover, .checkout-button:hover {
+  background-color: darkorange;
+}
+
+.coupon-container {
+  
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.coupon-input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+thead{
+  background-color: #efefef;
+}
+.price-text{
+  background-color: #efefef;
+}
+.Add-Cart-btn{
+  padding-left: 23px;
+}
+.summary-section span{
+  font-size: 16px;
+}
+.coupon-container h3{
+  font-size: 23px !important;
+}
