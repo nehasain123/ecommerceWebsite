@@ -24,7 +24,7 @@ const Banner = () => {
           <div className="col-md-4">
             <div className="info-item">
               <span className="icon mb-2">
-                <i className="fas fa-headset fa-2x"></i>
+              <i className="fas fa-phone-volume"></i>
               </span>
               <div className='text-start'>  
               <h5>24/7 Support</h5>

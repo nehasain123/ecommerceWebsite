@@ -1,6 +1,7 @@
-.error-text i {
-  font-size: 90px;
-  margin-bottom: 30px;
+.error-text svg {
+  font-size: 90px !important;
+  margin-bottom: 30px !important;
+  color: #051922;
 }
 
 .error-text h1 {

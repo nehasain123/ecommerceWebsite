@@ -63,7 +63,7 @@
     margin-left: 47px;
     margin-top: 4px;
     display: flex;
-    gap: 24px;
+    gap: 34px;
 }
 .cart-icon, .search-icon {
     color: white;

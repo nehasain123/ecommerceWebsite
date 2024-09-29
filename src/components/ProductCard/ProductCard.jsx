@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 const ProductCard = ({ image, title, price }) => {
   return (
     <div className="card product-card text-center">
-      <img src={image} className="card-img-top" alt={title} />
+   <div className='shopImages'>   <img src={image} className="card-img-top" alt={title} /></div>
       <div className="card-body">
         <h3 className="card-title">{title}</h3>
         <p className="card-text">Per Kg</p>

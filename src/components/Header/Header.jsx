@@ -1,16 +1,14 @@
-
-
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';  
 import './Header.css';
-import "../../assets/responsive.css"
+import "../../assets/responsive.css";
 import weblogo from "./images/logo.png";
- 
+import SearchArea from '../SearchArea/SearchArea';  
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchActive, setIsSearchActive] = useState(false);  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,9 +25,12 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const toggleSearchArea = () => {
+    setIsSearchActive(!isSearchActive);  
+  };
+
   return (
     <>
- 
       <header className={`navbar ${scrolling ? 'scrolled' : ''}`}>
         <div className='container d-flex justify-content-start align-items-center main-header'>
           <div className="logo">
@@ -50,14 +51,13 @@ function App() {
               <li>
                 <Link to="/pages" className='nav-hover-links'>Pages</Link>
                 <ul className="dropdown">
-                  <li><Link to="/about/history"> 404 pages</Link></li>
-                  <li><Link to="/About"> About</Link></li>
+                  <li><Link to="/about/history">404 pages</Link></li>
+                  <li><Link to="/About">About</Link></li>
                   <li><Link to="/Cart">Cart</Link></li>
-                  <li><Link to="/checkOut"> Check Out</Link></li>
-                  <li><Link to="/about/history"> Contact</Link></li>
-                  <li><Link to="/about/team"> News</Link></li>
+                  <li><Link to="/checkOut">Check Out</Link></li>
+                  <li><Link to="/about/history">Contact</Link></li>
+                  <li><Link to="/about/team">News</Link></li>
                   <li><Link to="/about/history">Shop</Link></li>
-                  
                 </ul>
               </li>
               <li>
@@ -84,10 +84,14 @@ function App() {
           </div>
           <div className="icons">
             <Link to="/cart" className="cart-icon"><i className="fa-solid fa-cart-shopping"></i></Link>
-            <span className="search-icon"><i className="fa-solid fa-magnifying-glass"></i></span>
+            <div className="search-icon" onClick={toggleSearchArea}>
+              
+              <Link to="/" className="cart-icon"><i className="fa-solid fa-magnifying-glass"></i></Link>
+            </div>
           </div>
         </div>
       </header>
+      {isSearchActive && <SearchArea />}  
     </>
   );
 }

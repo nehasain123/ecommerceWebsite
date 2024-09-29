@@ -18,6 +18,10 @@ import News from "./pages/News/News";
 import CheckOut from "../src/components/CheckOut/CheckOut";
 import './App.css';
 import NotFoundPage from './components/NotFound/NotFoundPage';
+import Contact from './pages/Contact/Contact';
+import GoogleMap from './pages/GoggleMap/GoggleMap';
+import Shop from './pages/Shop/Shop';
+import SearchArea from './components/SearchArea/SearchArea';
 
 
 function App() {
@@ -37,6 +41,7 @@ function App() {
               <ShopBanner />
               <LatestNews />
               <Carousel />
+          
             </>
           } />
           <Route path="*" element={<NotFoundPage />} />
@@ -44,7 +49,9 @@ function App() {
           <Route path="/checkOut" element={<CheckOut />} />
           <Route path="/about" element={<About />} />
           <Route path="/news" element={<News />} />
-
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/searchArea" element={<SearchArea />} />
         </Routes>
       </div>
       <Footer />

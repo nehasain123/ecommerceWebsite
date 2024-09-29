@@ -56,7 +56,7 @@ const LatestNews = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid, fuga quas itaque eveniet beatae optio.
       </p>
 
-      <div className="row d-flex justify-content-center images-main-section">
+      <div className="row d-flex justify-content-center image-main-section">
         {newsItems.map((item, index) => (
           <div className="col-md-4" key={index}>
             <NewsCard 

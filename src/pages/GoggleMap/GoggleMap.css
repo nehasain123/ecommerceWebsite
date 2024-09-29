@@ -1,0 +1,36 @@
+.find-location {
+    background-color: #162133;
+  }
+  
+  .find-location p {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 600;
+    padding: 95px 0;
+  }
+  
+  .find-location p svg {
+    margin-right: 10px;
+    color: #f28123;
+  }
+  
+  .embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 42.85%; /* Aspect ratio for 21:9 */
+  }
+  
+  .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  

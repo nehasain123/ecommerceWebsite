@@ -126,4 +126,43 @@
       opacity: 0.8; 
     }
     
+  
+    .pagination-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    
+    .pagination-wrap ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 10px;
+    }
+    
+    .pagination-wrap ul li {
+      display: inline-block;
+    }
+    
+    .pagination-wrap ul li a {
+      color: #6f6f6f;
+      font-size: 15px;
+      background-color: #f3f3f3;
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 5px;
+      margin: 3px;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+    }
+    
+    .pagination-wrap ul li a:hover {
+      background-color: #F28123;
+    }
+    
+    .pagination-wrap ul li a.active {
+      background-color: #F28123;
+    }
     
